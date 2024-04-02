@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#e7272f</color>
+    <color name="white">#FEFCFF</color>
+    <color name="black">#000000</color>
+    <color name="low_primary">#2F3D57</color>
+    <color name="app_color">@color/black</color>
+    <color name="low_app_color">#FFF3F1</color>
+    <color name="dark_gray">#626262</color>
+    <color name="light_gray">#9C9C9C</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="dash_bg">#c7cdd9</color>
+    <color name="dash_bg_text">#B9BBC1</color>
+    <color name="green">#0DAE14</color>
+    <color name="red">#F44336</color>
+    <color name="google_clr">#EF1C0D</color>
+    <color name="fb_color">#344DD6</color>
+    <color name="custom_color_red">#FF2E2E</color>
+    <color name="orange">#D8A304</color>
+    <color name="custom_color_blue">#007bff</color>
+    <color name="dark_blue">#46688E</color>
+    <color name="transparent">#64000000</color>
+    <color name="custom_color_green">#3CB371</color>
+    <color name="power_green">#09B1A1</color>
+    <color name="text_gray">#909090</color>
+    <color name="view_color">#f2f2f2</color>
+    <color name="text_color">#695029</color>
+</resources>

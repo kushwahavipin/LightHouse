@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.ContactUsActivity">
+
+        <include
+            android:id="@+id/rl_header"
+            layout="@layout/common_header"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_header"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/email" />
+
+                <LinearLayout
+                    android:id="@+id/ll_contact_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/bg_gray"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Write us on"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/lighthouse_gmail_com"
+                            android:textColor="@color/custom_color_green"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mail_ll"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_color_blue">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/inbox"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_contact_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/bg_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call us on"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="9810737751"
+                            android:textColor="@color/custom_color_green"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/call_ll"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/custom_color_blue">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_phone"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Describe your issue"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+               <LinearLayout
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <EditText
+                       android:padding="10dp"
+                       android:gravity="start"
+                       android:hint="Enter your query"
+                       android:layout_width="match_parent"
+                       android:layout_height="120dp"
+                       android:background="@drawable/et_design"/>
+                   <Button
+                       android:id="@+id/btn_submit"
+                       android:textColor="@color/white"
+                       android:text="Submit"
+                       android:backgroundTint="@color/custom_color_blue"
+                       android:layout_marginTop="15dp"
+                       android:layout_width="150dp"
+                       android:layout_height="40dp"
+                       android:background="@drawable/bt_bg"
+                       android:layout_gravity="center_horizontal"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:id="@+id/ll_order_related"
+                       android:layout_width="match_parent"
+                       android:layout_height="57dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/bg_button"
+                       android:backgroundTint="@color/bg_gray"
+                       android:gravity="center_vertical"
+                       android:orientation="horizontal">
+
+                       <ImageView
+
+                           android:layout_width="50dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/order"
+                           app:tint="@color/black" />
+
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp"
+
+                           android:layout_weight="1"
+                           android:text="Order Related"
+                           android:textColor="@color/black" />
+
+                       <ImageView
+                           android:layout_width="17dp"
+                           android:layout_height="17dp"
+                           android:layout_marginEnd="10dp"
+                           android:src="@drawable/ic_arrow_forward" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/ll_payment_related"
+                       android:layout_width="match_parent"
+                       android:layout_height="57dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/bg_button"
+                       android:backgroundTint="@color/bg_gray"
+                       android:gravity="center_vertical"
+                       android:orientation="horizontal">
+
+                       <ImageView
+
+                           android:layout_width="50dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/hand"
+                           app:tint="@color/black" />
+
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp"
+
+                           android:layout_weight="1"
+                           android:text="Payment Related"
+                           android:textColor="@color/black" />
+
+                       <ImageView
+                           android:layout_width="17dp"
+                           android:layout_height="17dp"
+                           android:layout_marginEnd="10dp"
+                           android:src="@drawable/ic_arrow_forward" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/ll_other"
+                       android:layout_width="match_parent"
+                       android:layout_height="57dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/bg_button"
+                       android:backgroundTint="@color/bg_gray"
+                       android:gravity="center_vertical"
+                       android:orientation="horizontal">
+
+                       <ImageView
+
+                           android:layout_width="50dp"
+                           android:layout_height="40dp"
+
+                           android:src="@drawable/ic_baseline_more_horiz_24"
+                           app:tint="@color/black" />
+
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="10dp"
+                           android:layout_weight="1"
+                           android:text="Other"
+                           android:textColor="@color/black" />
+
+                       <ImageView
+                           android:layout_width="17dp"
+                           android:layout_height="17dp"
+                           android:layout_marginEnd="10dp"
+                           android:src="@drawable/ic_arrow_forward" />
+                   </LinearLayout>
+               </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

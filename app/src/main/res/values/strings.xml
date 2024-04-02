@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LightHouse</string>
+
+    <array name="rainbow">
+        <item>#FFF60000</item>
+        <item>#FFFF8C00</item>
+        <item>#FFFFEE00</item>
+        <item>#FF4DE94C</item>
+        <item>#FF3783FF</item>
+        <item>#FF4815AA</item>
+    </array>
+    <string name="rupees">₹</string>
+    <string name="terms_condition"><![CDATA[Terms & condition]]></string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="version">Version</string>
+    <string name="version_0_0">Version 0.0</string>
+    <string name="welcome_to_light_house">Welcome To LightHouse</string>
+    <string name="hello">Hello</string>
+    <string name="amount">Amount</string>
+    <string name="lighthouse_gmail_com">info@lighthouseiot.in</string>
+    <string name="setting">Setting</string>
+    <string name="log_out">Log Out</string>
+</resources>

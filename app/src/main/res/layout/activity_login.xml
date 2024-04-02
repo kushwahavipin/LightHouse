@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivShapeable"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_bg_new"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ImageView.Corner" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/loginCard"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/etConsumerNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:hint="Enter Your Email"
+                    android:drawablePadding="20dp"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/number_id_new1"
+                    android:background="@drawable/login_et_drawable"
+                    app:layout_constraintTop_toBottomOf="@id/tvSignIn"
+                    />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:hint="Password"
+                    android:drawablePadding="20dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/lock_new"
+                    android:background="@drawable/login_et_drawable"
+                    app:layout_constraintTop_toBottomOf="@id/etConsumerNo"
+                    />
+
+                <TextView
+                    android:id="@+id/tvForgot"
+                    style="@style/text_style"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Forgot Password?"
+                    android:textColor="#e95b6e"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etPassword"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/MyLoginButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvForgot"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_margin="20dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mainCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivUser"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recharge_card" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/llPrice"
+                    android:layout_toEndOf="@id/ivUser"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_transactionId"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_marginTop="8dp"
+                        android:text="..."
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_cust_id"-->
+<!--                        style="@style/text_style"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:gravity="start"-->
+<!--                        android:text="6736573534"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:visibility="invisible" />-->
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start"
+                        android:text="6 June 2010 - 8:58 pm"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start"
+                        android:text="₹399"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentStatus"
+                        style="@style/text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start"
+                        android:text="Success"
+                        android:textColor="@color/green"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.7dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@color/bg_gray" />-->
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
